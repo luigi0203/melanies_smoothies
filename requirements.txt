@@ -2,4 +2,4 @@
 snowflake-connector-python
 snowflake-snowpark-pytho
 streamlit==1.31.1
-requests==2.26.0
+requests
