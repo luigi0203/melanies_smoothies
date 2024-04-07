@@ -1,5 +1,6 @@
 # Import python packages
 import streamlit as st
+from streamlit.report_thread import get_report_ctx
 from snowflake.snowpark.functions import col
 
 # Get the current credentials
