@@ -4,6 +4,23 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 
 # Get the current credentials
+import snowflake.connector
+
+# Conéctate a Snowflake
+conn = snowflake.connector.connect(
+    user='Luigi0203',
+    password='Mafe0203_',
+    account='SWDPFCW-SA40926.snowflakecomputing.com',
+    warehouse='COMPUTE_WH',
+    database='SMOOTHIES',
+    schema='PUBLIC'
+)
+# Crea un cursor para ejecutar consultas SQL
+cur = conn.cursor()
+
+# Obtén la sesión activa
+session = conn.session_id
+
 session = get_active_session()
 
 # Write directly to the app
