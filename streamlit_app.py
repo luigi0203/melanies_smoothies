@@ -1,5 +1,5 @@
 # Import python packages
-import streamlit as st
+#import streamlit as st
 #import snowflake.connector
 #from snowflake.connection import get_active_session
 #from snowflake.snowpark.functions import col
