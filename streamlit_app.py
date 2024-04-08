@@ -1,5 +1,6 @@
 # Import python packages
 import streamlit as st
+from snowflake_connection import get_active_session
 from snowflake.snowpark.functions import col
 # Get the current credentials
 session = get_active_session()
